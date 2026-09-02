@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { FolderGit } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 function Projects() {
     const [loading, setLoading] = useState<boolean>(true);
@@ -23,7 +24,7 @@ function Projects() {
             type: "client",
             image: "/hightechpsystem.jpeg",
             stack: ["React", "Node.js", "MongoDB", "Express"],
-            link: "#",
+            link: "private",
         },
         {
             id: 2,
@@ -33,17 +34,17 @@ function Projects() {
             type: "client",
             image: "/institutemanagement-Btlcry4S.png",
             stack: ["React", "Node", "MongoDB", "Express"],
-            link: "#",
+            link: "private",
         },
         {
             id: 3,
-            name: "Ecommerce Web Application",
+            name: "One Power Product Listing Website",
             description: "Modern ecommerce platform with product listings, cart management, secure checkout, and order tracking.",
-            badge: "Portfolio",
-            type: "portfolio",
-            image: "/puvo-DECK2ANs.png",
+            badge: "Client",
+            type: "client",
+            image: "/onepower.png",
             stack: ["Next.js", "Tailwind", "Node.js"],
-            link: "#",
+            link: "https://www.onepoweriraq.com",
         },
     ];
 
@@ -154,9 +155,14 @@ function Projects() {
                             </div>
 
                             <div className="flex items-center justify-between pt-2 border-t border-muted/30">
-                                <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                                <div className="flex flex-col items-center gap-1.5 text-xs text-muted-foreground">
+                                    <div className="flex items-center gap-3">
                                     <FolderGit size={13} />
                                     <span>Full Stack</span>
+                                    </div>
+                                    <Link className={`${proj.link === 'private' ? "": "underline"}`} target="_blank" href={proj.link === 'private' ? '#': `${proj.link}`}>
+                                    {proj.link === 'private' ? "This project is private" : "View the Project"}
+                                    </Link>
                                 </div>
 
                             </div>
