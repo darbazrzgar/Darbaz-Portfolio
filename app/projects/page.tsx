@@ -46,6 +46,16 @@ function Projects() {
             stack: ["Next.js", "Tailwind", "Node.js"],
             link: "https://www.onepoweriraq.com",
         },
+        {
+            id: 4,
+            name: "One Power Service Support System",
+            description: "Modern service support system with search and filtering, advanced RBAC (Role based access), with audit logs.",
+            badge: "Client",
+            type: "client",
+            image: "/service.png",
+            stack: ["Next.js", "Tailwind", "Node.js", "ShadCN", "Supabase"],
+            link: "private",
+        },
     ];
 
     if (loading) {
