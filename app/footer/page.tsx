@@ -17,7 +17,7 @@ function Footer() {
         { label: "Services", to: "services" },
         { label: "Contact", to: "contact" },
     ];
-
+    
     const socials = [
         { icon: SiGithub, href: "https://github.com/darbazrzgarsalih", label: "GitHub" },
         { icon: Mail, href: "mailto:darborzgar7@gmail.com", label: "Email" },

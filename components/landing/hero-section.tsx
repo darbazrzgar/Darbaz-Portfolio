@@ -78,19 +78,13 @@ function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             id="home"
-            className="min-h-screen w-full flex p-4 flex-col lg:flex-row justify-between items-center gap-10 px-20 pt-32 border-b border-muted/80"
+            className="min-h-screen mx-auto w-full flex p-4 flex-col lg:flex-row justify-between items-center gap-10 px-20 pt-32 border-b border-muted/80"
         >
             <div className="flex flex-col gap-2 max-w-xl">
-                <Badge variant={'outline'} className="flex items-center gap-2 w-fit mb-3">
-                    <div className="relative flex items-center justify-center">
-                        <span className="absolute inline-flex h-2 w-2 rounded-full bg-green-400 opacity-75 animate-ping"></span>
-                        <span className="relative inline-flex h-2 w-2 rounded-full bg-green-400"></span>
-                    </div>
-                    Available for work
-                </Badge>
+             
 
                 <h1 className="text-3xl md:text-5xl font-thin text-foreground/90 leading-tight">
-                    Hi, I'm <span className="font-bold">Darbaz</span> —
+                    Hi, I&apos;m <span className="font-bold">Darbaz</span> —
                     <br />
                     <span className="font-semibold">
                         Full Stack Developer

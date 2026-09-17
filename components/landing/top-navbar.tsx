@@ -14,18 +14,13 @@ function TopNavbar() {
                 <Avatar>
                     <AvatarImage sizes="20 40" src={'https://darbodev.vercel.app/assets/me-Dv2SGOg_.jpg'} />
                     <AvatarFallback>DR</AvatarFallback>
-                    <AvatarBadge className="bg-gradient-to-br from-primary/50 to-green-300/80">
-                        <div className="relative flex items-center justify-center">
-                            <span className="absolute inline-flex h-2 w-2 rounded-full bg-gradient-to-br from-primary/50 to-green-300 opacity-75 animate-ping"></span>
-                            <span className="relative inline-flex h-2 w-2 rounded-full bg-gradient-to-br from-primary/50 to-green-300"></span>
-                        </div>
-                    </AvatarBadge>
+                   
                 </Avatar>
                 <button
                     onClick={handleScrollHome}
                     className="font-bold text-2xl cursor-pointer bg-gradient-to-br from-primary/50 to-green-300/80 bg-clip-text text-transparent py-1 px-2"
                 >
-                    DevDarbo
+                    Darbo Dev
                 </button>
             </div>
             <div>
